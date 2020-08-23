@@ -70,13 +70,10 @@
 			children = (
 				110725C624F13D0B00AF28C6 /* AppDelegate.swift */,
 				110725C824F13D0B00AF28C6 /* SceneDelegate.swift */,
-				110725CA24F13D0B00AF28C6 /* EmojiMemoryGameView.swift */,
-				118CCB4924F2CA5700A96DC4 /* Grid.swift */,
-				118CCB4B24F2D50100A96DC4 /* GridLayout.swift */,
-				110725DC24F188E900AF28C6 /* MemoryGame.swift */,
-				118CCB4F24F2F18000A96DC4 /* Array+Only.swift */,
-				118CCB4D24F2D95F00A96DC4 /* Array+Identifiable .swift */,
-				110725DE24F18BCE00AF28C6 /* EmojiMemoryGame.swift */,
+				118CCB5424F2F44000A96DC4 /* View */,
+				118CCB5324F2F3CB00A96DC4 /* ViewModel */,
+				118CCB5224F2F3C000A96DC4 /* Model */,
+				118CCB5124F2F3A500A96DC4 /* Extensions */,
 				110725CC24F13D1200AF28C6 /* Assets.xcassets */,
 				110725D124F13D1200AF28C6 /* LaunchScreen.storyboard */,
 				110725D424F13D1200AF28C6 /* Info.plist */,
@@ -91,6 +88,41 @@
 				110725CF24F13D1200AF28C6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		118CCB5124F2F3A500A96DC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				118CCB4F24F2F18000A96DC4 /* Array+Only.swift */,
+				118CCB4D24F2D95F00A96DC4 /* Array+Identifiable .swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		118CCB5224F2F3C000A96DC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				110725DC24F188E900AF28C6 /* MemoryGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		118CCB5324F2F3CB00A96DC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				110725DE24F18BCE00AF28C6 /* EmojiMemoryGame.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		118CCB5424F2F44000A96DC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				110725CA24F13D0B00AF28C6 /* EmojiMemoryGameView.swift */,
+				118CCB4924F2CA5700A96DC4 /* Grid.swift */,
+				118CCB4B24F2D50100A96DC4 /* GridLayout.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

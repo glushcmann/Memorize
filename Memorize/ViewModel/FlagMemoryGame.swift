@@ -1,19 +1,19 @@
 //
-//  EmojiMemoryGame.swift
+//  FlagsMemoryGame.swift
 //  Memorize
 //
-//  Created by Никита on 22.08.2020.
+//  Created by Никита on 25.08.2020.
 //  Copyright © 2020 Nikita Glushchenko. All rights reserved.
 //
 
 import SwiftUI
 
-class EmojiMemoryGame: ObservableObject {
+class FlagMemoryGame: ObservableObject {
     
-    @Published private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
-        
-    static func createMemoryGame() -> MemoryGame<String> {
-        let emojis: Array<String> = ["👻", "🎃", "😈"]
+    @Published private var model: MemoryGame<String> = FlagMemoryGame.createMemoryGame()
+         
+    private static func createMemoryGame() -> MemoryGame<String> {
+        let emojis: Array<String> = ["🏳️", "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "🇱🇧", "🇷🇺", "🇯🇲", "🇺🇸"]
         return MemoryGame<String>(numberOfPairsOfCards: emojis.count) { pairIndex in
             return emojis[pairIndex]
         }
@@ -32,3 +32,4 @@ class EmojiMemoryGame: ObservableObject {
     }
     
 }
+
